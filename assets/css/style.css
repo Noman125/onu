@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.common-block{
+    max-width: 1200px;
+    margin: auto;
+}
+.common-block-two{
+    max-width: 680px;
+    margin: auto;
+}
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block; 
+}
+header{
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+}
+header .common-block .logo{
+    float: left;
+    padding-top: 22px;
+    cursor: pointer;
+}
+header .common-block .menu{
+    float: right;
+}
+header .common-block .menu ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+header .common-block .menu ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+header .common-block .menu ul li a:hover{
+    color: #87d37c;
+}
+.banner{
+    background-image: url(../../img/placeit.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 680px;
+    position: relative;
+}
+.banner h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.banner h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 92px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 40px;
+    border: 2px solid #fff;
+}
+.banner h1 span{
+    color: #87d37c;
+}
+.banner h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 15px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+}
+.about-us{
+    padding: 100px 0;
+}
+.common-title{
+    font-size: 36px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    color: #040404;
+}
+.common-sub{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    text-align: center;
+    color: #525152;
+}
+.about-info,
+.service-info,
+.pricing-info{
+    width: 25%;
+    float: left;
+}
+.about-content{
+    padding: 50px 0;
+    text-align: center;
+}
+.about-info-content{
+    padding: 0 13px;
+    cursor: pointer;
+}
+.about-info-content .fa{
+    font-size: 50px;
+    padding-bottom: 35px;
+    color: #030303;
+}
+.about-info-content h3{
+    font-size: 26px;
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height: 30px;
+    color: #040404;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.about-info-content p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 18px;
+    color: #525152;
+}
+.about-info-content:hover .fa,
+.about-info-content:hover h3{
+    color: #87d37c;
+}
+.services{
+    background: #e1e1e1;
+    padding: 90px 0;
+}
+.service-info{
+    padding-top: 70px;
+}
+.service-info-content{
+    margin: 0 15px;
+    position: relative;
+}
+.hover-overlay ul{
+    text-align: center;
+}
+.hover-overlay ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:  0 8px;
+}
+.hover-overlay ul li a{
+    text-decoration: none;
+    color: #fff;
+    width: 55px;
+    line-height: 55px;
+    border: 1px solid #fff;
+    display: block;
+    border-radius: 50%;
+    font-size: 20px;
+    background: transparent;
+}
+.hover-overlay ul li a:hover{
+    background: #87d37c;
+    border-color: #87d37c;
+}
+.hover-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background: rgba(0,0,0,0.7);
+    padding: 93px 0;
+    transform: scale(0);
+    transition: transform ease 1s;
+}
+.service-info-content:hover .hover-overlay{
+    transform: scale(1);
+}
+.portfolio{
+    padding: 90px 0;
+}
+.tab{
+    padding: 40px 0 50px;
+}
+.tab ul{
+    text-align: center;
+}
+.tab ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.tab ul li a{
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #fff;
+    background: #010101;
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.tab ul li a:hover{
+    background: #87d37c;
+}
+.image-block{
+    padding: 20px 0;
+}
+.image-info{
+    width: 33.33%;
+    float: left;
+    
+}
+.image-info-content{
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0,0,0,0.7);
+    
+    transition: all ease 2s;
+}
+.image-overlay h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#87d37c;
+    opacity: 0;
+    transition: opacity ease 3s;
+}
+.image-info-content:hover .image-overlay{
+   height: 98%;
+   padding: 32% 0;
+}
+.image-info-content:hover .image-overlay h3{
+    opacity: 1;
+}
+.pricing{
+    padding:  70px 0;
+}
+.pricing-content{
+    padding-top: 80px;
+}
+.pricing-info-content{
+    margin: 0 15px;
+    background: #39393a;
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+.pricing-info-content p{
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Archivo Narrow', sans-serif;
+    padding: 25px;
+    border: 2px solid #fff;
+    display: inline-block;
+    border-radius: 50%;
+    background: transparent;
+}
+.pricing-info-content p span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.pricing-info-content p sup{
+    font-size: 18px;
+}
+.list-item{
+    padding: 25px 0;
+}
+.list-item ul li{
+    list-style-type: none;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.pricing-info-content .btn{
+    background: #fefdfc;
+    line-height: 35px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Archivo Narrow', sans-serif;
+    cursor: pointer;
+}
+
+.pricing-info-content .btn:focus{
+    outline: 0;
+}
+.pricing-info-content:hover{
+    background: #87d37c;
+}
+.pricing-info-content:hover p{
+    background: #fff;
+    color: #87d37c;
+}
+.pricing-info-content:hover .btn{
+    color: #87d37c;
+}
+.our-projects{
+    background: url(../../img/Strictclass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 330px;
+}
+.p-overlay{
+    position: absolute;
+    padding: 100px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.project-info ul{
+    text-align: center;
+}
+.project-info ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 23%;
+    margin: 10px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #fff;
+    padding: 20px 0;
+}
+.project-info ul li span{
+    font-size: 72px;
+}
+.form-content{
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+}
+.contact-form{
+    background: #e1e1e1;
+    padding: 100px 0 40px;
+}
+.form-content input{
+    width: 100%;
+    line-height: 40px;
+    background: #fff;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border: none;
+    
+}
+.form-content textarea{
+    width: 100%;
+    height: 95px;
+    line-height: 50px;
+    background: #fff;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+.form-content button{
+    background: #87d37c;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 35px;
+    font-family: 'Archivo Narrow', sans-serif;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.form-content button:hover{
+    background: #3a3a3a;
+}
+.map{
+    width: 100%;
+    height: 440px;
+}
+.map iframe{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+.f-content p,
+.f-content ul,
+.f-content ul li{
+    display: inline-block;
+}
+.f-content ul li{
+    padding: 0 10px;
+}
+footer{
+    background: #000;
+    padding: 15px 20px;
+    text-align: right;
+}
+.f-content p{
+    color: #fff;
+    padding-right: 395px;
+}
+.f-content a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.f-content a:hover{
+    color: #87d37c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
